@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar perfil</title>
+    <link rel="stylesheet" href="./scr/css/edit.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700" rel="stylesheet">
+</head>
+<body>
+        
+        <header class="header">
+            <h1><img src="./scr/image/logo.png" alt="logo D&Afitness"></h1>
+        </header>
+    
+        
+        <main class="content">
+                <h2>Alterar dados do usuário</h2>
+                <form id="formulario-edicao">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name"></label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="age"></label>
+                            <input type="number" id="age">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <input type="email" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modality"></label>
+                            <select id="modality">
+                                <option value="">Modalidade</option>
+                                <option value="Musculação">Musculação</option>
+                                <option value="Luta">Luta</option>
+                                <option value="CrossFit">CrossFit</option>
+                                <option value="Dança">Dança</option>
+                                <option value="Natação">Natação</option>
+                            </select>
+                        </div>
+                        <div id="espacofoto"></div>
+                    </div>
+                  
+                    <div class="form-actions">
+                        <a href="/"><button type="button" class="cancel-button">Cancelar</button></a>
+                        <a href="/"><button type="submit" class="btn-save">Salvar</button></a>
+                    </div>
+                </form>
+            
+        </main>
+
+        <script src="./scr/js/edit.js"></script>
+</body>
+</html>

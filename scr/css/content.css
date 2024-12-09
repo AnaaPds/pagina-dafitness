@@ -1,0 +1,55 @@
+.content{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: auto;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+h2{
+    font-family: Kotta One;
+    color: #FFFFFF;
+    padding: 3%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.form-add {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 70%; 
+    margin: 0 auto; 
+}
+
+.form-add input, 
+.form-add select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+button {
+    padding: 10px 15px;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table img {
+    width: 20px;
+    height: 20px;
+}
+

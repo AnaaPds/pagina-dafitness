@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&Afitness</title>
+    <link rel="stylesheet" href="./scr/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1><img src="./scr/image/logo.png" alt="logo D&Afitness"></h1>
+    </header>
+
+    <main>
+        <h2>Gestão de Alunos</h2>
+
+        <form id="cadastroForm">
+            <section class="form-add">
+                <input type="text" placeholder="Nome" id="nomeAluno">
+                <input type="number" placeholder="Idade" id="numberAluno">
+                <input type="email" placeholder="Email" id="emailAluno">
+                <input id="foto" type="url" placeholder="URL da Foto" required />
+                <select id="modalidadeAluno">
+                    <option value="">Modalidade</option>
+                    <option value="Musculação">Musculação</option>
+                    <option value="Luta">Luta</option>
+                    <option value="CrossFit">CrossFit</option>
+                    <option value="Dança">Dança</option>
+                    <option value="Natação">Natação</option>
+                </select>
+                <button type="submit" class="btn-save">Salvar</button>
+            </section>
+        </form>
+        <table id="tabela-academia">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Foto</th>
+                    <th>Idade</th>
+                    <th>Email</th>
+                    <th>Modalidade</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button class="btn-edit"><img src="./scr/image/editar.png" alt="Editar"></button></td>
+                    <td><button class="btn-delete"><img src="./scr/image/lixeira.png" alt="Excluir"></button></td> 
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="./scr/js/main.js"></script>
+    <script src="scr/js/enviar.js"></script>
+    <script src="scr/js/edit.js"></script>
+</body>
+</html>

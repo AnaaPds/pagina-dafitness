@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../image/academiafundo.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../image/academiafundo.avif'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); 
+    z-index: -1; 
+    background-color: rgba(0, 0, 0, 0.3); /* Escurece o fundo */
+    background-blend-mode: darken;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 1; 
+    color: #fff; 
+    padding: 20px;
+}
+
+table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        margin-top: 40px;
+        background: white;
+        overflow: hidden;
+        border-radius: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+#espacofoto img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin: 5px;
+}
+
+.btn-save {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-save:hover {
+    background-color: #0056b3;
+}
+
+
+.btn-edit, .btn-delete {
+    background-color: white; 
+    border: none;
+    padding: 10px;
+    border-radius: 50%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+
+
+.btn-edit:hover {
+    background-color: #E1E0E0; 
+}
+
+.btn-delete:hover {
+    background-color: #E1E0E0; 
+}
+
+.imagem-icone {
+    width: 30px; 
+    height: 40px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
